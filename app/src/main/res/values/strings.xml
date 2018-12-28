@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TourGuideApp</string>
+    <string name="tab_text_1">Sightseeing</string>
+    <string name="tab_text_2">Entertainment</string>
+    <string name="tab_text_3">Hotels</string>
+    <string name="tab_text_4">Food</string>
+    <string name="DetailImage">Detail Image</string>
+    <string name="DetailAddress">Detail Address</string>
+    <string name="DetailPhone">Detail Phone</string>
+
+</resources>
