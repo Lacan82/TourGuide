@@ -29,9 +29,9 @@ public class EntertainFragment extends Fragment {
 
         final PlacesAdapter adapter = new PlacesAdapter(getActivity(), places);
 
-        places.add(new Places("Monster Mini Golf",R.drawable.monster,"9116 Gaither Rd,\n Gaithersburg, MD 20877","301-330-6464"));
-        places.add(new Places("Muse Paintbar",R.drawable.muse,"217 Boardwalk Pl #225,\n Gaithersburg, MD 20878","301-327-2500"));
-        places.add(new Places("AMC Rio",R.drawable.monster,"9811 Washingtonian Ctr,\n Gaithersburg, MD 20878","301-948-6673"));
+        places.add(new Places( getString(R.string.Monster),R.drawable.monster,getString(R.string.MonsterAddress),getString(R.string.MonsterPhone)));
+        places.add(new Places(getString(R.string.Muse),R.drawable.muse,getString(R.string.MuseAddress),getString(R.string.MusePhone)));
+        places.add(new Places(getString(R.string.AMC),R.drawable.monster,getString(R.string.AMCAddress),getString(R.string.AMCPhone)));
 
 
         ListView listView = view.findViewById(R.id.places_list);
@@ -43,8 +43,7 @@ public class EntertainFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 Places selectedPlace = places.get(position);
-                Log.v("grabbing right Place?", selectedPlace.getPlace() + selectedPlace.getPlaceImage());
-                // selectedItem.setSelectedItem(selectedAlbum.getAlbums());
+                // Log.v("grabbing right Place?", selectedPlace.getPlace() + selectedPlace.getPlaceImage());
                 Intent myIntent = new Intent(view.getContext(), DetailFragment.class);
                 myIntent.putExtra("Place", selectedPlace.getPlace());
                 myIntent.putExtra("Image", selectedPlace.getPlaceImage());

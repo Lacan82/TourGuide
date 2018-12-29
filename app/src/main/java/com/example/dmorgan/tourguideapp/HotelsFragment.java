@@ -30,8 +30,8 @@ public class HotelsFragment extends Fragment {
 
         final PlacesAdapter adapter = new PlacesAdapter(getActivity(), places);
 
-        places.add(new Places("Holiday Inn",R.drawable.holiday,"Two Montgomery Village Ave,\n Gaithersburg, MD 20879","301-948-8900"));
-        places.add(new Places("Courtyard by Marriott",R.drawable.marriot,"204 Boardwalk Pl, Gaithersburg,\n MD 20878","301-527-9000"));
+        places.add(new Places(getString(R.string.Holiday),R.drawable.holiday,getString(R.string.HolidayAddress),getString(R.string.HolidayPhone)));
+        places.add(new Places(getString(R.string.Courtyard),R.drawable.marriot,getString(R.string.CourtyardAddress),getString(R.string.CourtyardPhone)));
 
         ListView listView = view.findViewById(R.id.places_list);
 
@@ -42,13 +42,12 @@ public class HotelsFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 Places selectedPlace = places.get(position);
-                Log.v("grabbing right Place?", selectedPlace.getPlace() + selectedPlace.getPlaceImage());
-                // selectedItem.setSelectedItem(selectedAlbum.getAlbums());
+                // Log.v("grabbing right Place?", selectedPlace.getPlace() + selectedPlace.getPlaceImage());
                 Intent myIntent = new Intent(view.getContext(), DetailFragment.class);
-                myIntent.putExtra("Place", selectedPlace.getPlace());
-                myIntent.putExtra("Image", selectedPlace.getPlaceImage());
-                myIntent.putExtra("Address", selectedPlace.getPlaceAddress());
-                myIntent.putExtra("Phone", selectedPlace.getPlacePhone());
+                myIntent.putExtra(getString(R.string.Extra1), selectedPlace.getPlace());
+                myIntent.putExtra(getString(R.string.Extra2), selectedPlace.getPlaceImage());
+                myIntent.putExtra(getString(R.string.Extra3), selectedPlace.getPlaceAddress());
+                myIntent.putExtra(getString(R.string.Extra4), selectedPlace.getPlacePhone());
                 startActivityForResult(myIntent, 1);
 
 

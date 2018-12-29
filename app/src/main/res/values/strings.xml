@@ -7,5 +7,50 @@
     <string name="DetailImage">Detail Image</string>
     <string name="DetailAddress">Detail Address</string>
     <string name="DetailPhone">Detail Phone</string>
+    <string name="Monster">Monster Mini Golf"</string>
+    <string name="MonsterAddress">9116 Gaither Rd,
+ Gaithersburg, MD 20877</string>
+    <string name="MonsterPhone">301-330-6464</string>
+    <string name="Muse">Muse Paintbar</string>
+    <string name="MuseAddress">217 Boardwalk Pl #225,
+ Gaithersburg, MD 20878</string>
+    <string name="MusePhone">301-327-2500</string>
+    <string name="AMC">AMC Rio</string>
+    <string name="AMCAddress">9811 Washingtonian Ctr,
+ Gaithersburg, MD 20878</string>
+    <string name="AMCPhone">301-948-6673</string>
+    <string name="Growlers">Growlers</string>
+    <string name="GrowlersAddress">227 E Diamond Ave,
+ Gaithersburg, MD 20877</string>
+    <string name="GrowlersPhone">240-261-6196</string>
+    <string name="Copper">Copper Canyon Grill</string>
+    <string name="CopperAddress">100 Boardwalk Pl,
+ Gaithersburg, MD 20878</string>
+    <string name="CopperPhone">240-631-0003</string>
+    <string name="Holiday">Holiday Inn</string>
+    <string name="HolidayAddress">Two Montgomery Village Ave,
+ Gaithersburg, MD 20879</string>
+    <string name="HolidayPhone">301-948-8900</string>
+    <string name="Courtyard">Courtyard by Marriott</string>
+    <string name="CourtyardAddress">204 Boardwalk Pl, Gaithersburg,
+ MD 20878</string>
+    <string name="CourtyardPhone">301-527-9000</string>
+    <string name="Seneca">Seneca Creek State Park</string>
+    <string name="SenecaAddress">11950 Clopper Rd,
+ Gaithersburg, MD 20878</string>
+    <string name="SenecaPhone">301-924-2127</string>
+    <string name="museum">Gaithersburg museum</string>
+    <string name="museumAddress">9 S Summit Ave,
+ Gaithersburg, MD 20877</string>
+    <string name="museumPhone">301-258-6160</string>
+    <string name="Rio">Washingtonian Rio</string>
+    <string name="RioAddress">9811 Washingtonian Blvd,
+ Gaithersburg, MD 20878</string>
+    <string name="RioPhone">301-921-4684</string>
+    <string name="Extra1">Place</string>
+    <string name="Extra2">Image</string>
+    <string name="Extra3">Address</string>
+    <string name="Extra4">Phone</string>
+
 
 </resources>

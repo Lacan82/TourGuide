@@ -29,8 +29,8 @@ public class FoodFragment extends Fragment {
 
         final PlacesAdapter adapter = new PlacesAdapter(getActivity(), places);
 
-        places.add(new Places("Growlers",R.drawable.growlers,"227 E Diamond Ave,\n Gaithersburg, MD 20877","240-261-6196"));
-        places.add(new Places("Copper Canyon Grill",R.drawable.copper,"00 Boardwalk Pl,\n Gaithersburg, MD 20878","240-631-0003"));
+        places.add(new Places(getString(R.string.Growlers),R.drawable.growlers,getString(R.string.GrowlersAddress),getString(R.string.GrowlersPhone)));
+        places.add(new Places(getString(R.string.Copper),R.drawable.copper,getString(R.string.CopperAddress),getString(R.string.CopperPhone)));
 
 
         ListView listView = view.findViewById(R.id.places_list);
@@ -42,13 +42,12 @@ public class FoodFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 Places selectedPlace = places.get(position);
-                Log.v("grabbing right Place?", selectedPlace.getPlace() + selectedPlace.getPlaceImage());
-                // selectedItem.setSelectedItem(selectedAlbum.getAlbums());
+                // Log.v("grabbing right Place?", selectedPlace.getPlace() + selectedPlace.getPlaceImage());
                 Intent myIntent = new Intent(view.getContext(), DetailFragment.class);
-                myIntent.putExtra("Place", selectedPlace.getPlace());
-                myIntent.putExtra("Image", selectedPlace.getPlaceImage());
-                myIntent.putExtra("Address", selectedPlace.getPlaceAddress());
-                myIntent.putExtra("Phone", selectedPlace.getPlacePhone());
+                myIntent.putExtra(getString(R.string.Extra1), selectedPlace.getPlace());
+                myIntent.putExtra(getString(R.string.Extra2), selectedPlace.getPlaceImage());
+                myIntent.putExtra(getString(R.string.Extra3), selectedPlace.getPlaceAddress());
+                myIntent.putExtra(getString(R.string.Extra4), selectedPlace.getPlacePhone());
                 startActivityForResult(myIntent, 1);
 
 

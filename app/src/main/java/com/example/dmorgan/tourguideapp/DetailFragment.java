@@ -21,10 +21,10 @@ public class DetailFragment extends AppCompatActivity {
         setContentView(R.layout.fragment_detail);
 
         Intent intent = getIntent();
-        String Place = intent.getStringExtra("Place");
-        Integer Image = intent.getIntExtra("Image", 0);
-        String Address = intent.getStringExtra("Address");
-        String Phone = intent.getStringExtra("Phone");
+        String Place = intent.getStringExtra(getString(R.string.Extra1));
+        Integer Image = intent.getIntExtra(getString(R.string.Extra2), 0);
+        String Address = intent.getStringExtra(getString(R.string.Extra3));
+        String Phone = intent.getStringExtra(getString(R.string.Extra4));
 
         actionBar.setTitle(Place);
 
